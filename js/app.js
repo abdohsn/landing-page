@@ -31,6 +31,8 @@
  */
 
 // build the nav
+
+//attribute to https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 function generateNavItems() {
     let navBar = document.getElementById("navbar__list");
     const fragment = document.createDocumentFragment();
