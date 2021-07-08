@@ -36,7 +36,7 @@
 function generateNavItems() {
     let navBar = document.getElementById("navbar__list");
     const fragment = document.createDocumentFragment();
-    let navItems = [1, 2, 3];
+    let navItems = [1, 2, 3, 4, 5];
     for (let i = 0; i < navItems.length; i++) {
         const listIetem = document.createElement("li");
         listIetem.innerHTML = `<a href="#section${navItems[i]}">Section ${navItems[i]}</a>`;
