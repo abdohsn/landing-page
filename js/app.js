@@ -49,15 +49,10 @@ generateNavItems();
 let anySection = document.querySelectorAll(".section");
 
 function isInViewPort(element) {
-    var distance = element.getBoundingClientRect();
+    let distance = element.getBoundingClientRect();
     return (
-        distance.top >= 0 &&
-        distance.left >= 0 &&
-        distance.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-        distance.right <=
-            (window.innerWidth || document.documentElement.clientWidth)
-    );
+        distance.top > -250 &&
+        distance.top < 50);
 }
 window.addEventListener(
     "scroll",
