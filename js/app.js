@@ -33,26 +33,31 @@
 // build the nav
 
 //attribute to https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
-function generateNavItems() {
+(function () {
     let navBar = document.getElementById("navbar__list");
     const fragment = document.createDocumentFragment();
     let navItems = [1, 2, 3, 4, 5];
-    for (let i = 0; i < navItems.length; i++) {
+
+    navItems.forEach((Item) => {
         const listIetem = document.createElement("li");
-        listIetem.innerHTML = `<a href="#section${navItems[i]}">Section ${navItems[i]}</a>`;
+        listIetem.innerHTML = `<a href="#section${Item}">Section ${Item}</a>`;
         fragment.appendChild(listIetem);
-    }
+    });
+
+    // for (let i = 0; i < navItems.length; i++) {
+    //     const listIetem = document.createElement("li");
+    //     listIetem.innerHTML = `<a href="#section${navItems[i]}">Section ${navItems[i]}</a>`;
+    //     fragment.appendChild(listIetem);
+    // }
     navBar.appendChild(fragment);
-}
-generateNavItems();
+})();
+// generateNavItems();
 // Add class 'active' to section when near top of viewport
 let anySection = document.querySelectorAll(".section");
 
 function isInViewPort(element) {
     let distance = element.getBoundingClientRect();
-    return (
-        distance.top > -250 &&
-        distance.top < 50);
+    return distance.top > -250 && distance.top < 50;
 }
 window.addEventListener(
     "scroll",
