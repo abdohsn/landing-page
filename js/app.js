@@ -36,7 +36,7 @@
 (function () {
     let navBar = document.getElementById("navbar__list");
     const fragment = document.createDocumentFragment();
-    let navItems = [1, 2, 3, 4, 5];
+    let navItems = [1, 2, 3, 4];
 
     navItems.forEach((Item) => {
         const listIetem = document.createElement("li");
