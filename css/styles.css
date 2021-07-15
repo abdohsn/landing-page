@@ -216,6 +216,10 @@ section.your-active-class span {
     background-color: rgb(37, 36, 36);
 }
 
+.active {
+    background-color: #ff0000;
+}
+
 section.your-active-class .landing__container::before {
     opacity: 1;
     animation: rotate 4s linear 0s infinite forwards;
@@ -225,6 +229,8 @@ section.your-active-class .landing__container::after {
     opacity: 1;
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
+
+
 
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {

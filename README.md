@@ -10,7 +10,7 @@ I used javascript, css and html
 
 ## what resources have you used
 
-stackoverflow, codepen ...
+[stackoverflow](https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link), codepen ...
 
 ## what functionalities have you added
 
